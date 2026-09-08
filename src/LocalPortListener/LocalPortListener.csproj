@@ -8,6 +8,7 @@
     <RootNamespace>LocalPortListener</RootNamespace>
     <AssemblyName>LocalPortListener</AssemblyName>
     <InvariantGlobalization>true</InvariantGlobalization>
+    <ApplicationIcon>Resources\app.ico</ApplicationIcon>
   </PropertyGroup>
 
 </Project>
