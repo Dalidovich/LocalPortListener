@@ -1,4 +1,4 @@
-using LocalPortListener.Models;
+﻿using LocalPortListener.Models;
 
 namespace LocalPortListener.Rendering;
 
@@ -10,10 +10,10 @@ public sealed class ListenerTableRenderer
     private static readonly TableColumn[] Columns =
     [
         new("#", listener => listener.Id.ToString(), _ => ConsoleColor.White, RightAligned: true, MaxWidth: 5),
-        new("PROTO", listener => listener.Protocol, Dim, MaxWidth: 5),
+        new("PROCESS", listener => listener.ProcessName, ProcessColor, MaxWidth: 28),
         new("ADDRESS", listener => listener.LocalAddress, Dim, MaxWidth: 24),
         new("PORT", listener => listener.Port.ToString(), PortColor, RightAligned: true, MaxWidth: 6),
-        new("PROCESS", listener => listener.ProcessName, ProcessColor, MaxWidth: 28),
+        new("PROTO", listener => listener.Protocol, Dim, MaxWidth: 5),
         new("PID", listener => listener.ProcessId.ToString(), _ => ConsoleColor.Magenta, RightAligned: true, MaxWidth: 7),
         new("STARTED", FormatStartedAt, _ => ConsoleColor.DarkYellow, MaxWidth: 19),
         new("NOTE", listener => listener.Note, _ => ConsoleColor.DarkCyan, MaxWidth: 34)

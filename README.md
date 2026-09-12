@@ -8,7 +8,7 @@ your own dev stack: node, dotnet, postgres, docker, and friends.
 
 ## Features
 
-- All TCP listeners (IPv4 and IPv6) in one table: protocol, local address, port, process name, PID, start time, note.
+- All TCP listeners (IPv4 and IPv6) in one table: process name, local address, port, protocol, PID, start time, note.
 - Windows system processes filtered out by default, shown dimmed on demand.
 - Notes for well-known ports (PostgreSQL, Redis, Vite, ASP.NET Core, ...), the ephemeral range, and for
   processes that need administrator rights to inspect.
